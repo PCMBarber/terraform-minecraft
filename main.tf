@@ -3,6 +3,13 @@ provider "aws" {
     access_key = var.access_key
     secret_key = var.secret_key
 }
+module "subnets" {
+    source          = "./subnets"
+    vpc_id          = module.vpc.vpc_id
+    route_id        = module.vpc.route_id
+    sec_group_id    = module.vpc.sec_group_id
+    internet_gate   = module.vpc.internet_gate
+}
 
 module "vpc" {
     source          = "./vpc"
