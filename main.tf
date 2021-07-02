@@ -10,3 +10,12 @@ module "subnets" {
     sec_group_id    = module.vpc.sec_group_id
     internet_gate   = module.vpc.internet_gate
 }
+
+module "vpc" {
+    source          = "./vpc"
+}
+
+module "ec2" {
+    source          = "./ec2"
+    net_id          = module.subnets.net_id
+}
