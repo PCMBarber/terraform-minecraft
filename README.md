@@ -1,6 +1,7 @@
 # terraform-minecraft
 
 Download a Forge.jar and host it on a direct download link website - (change install.sh to reflect)
+line 5 and line 15, the version that is unpacked from the installer.jar depends on version provided
 
 https://files.minecraftforge.net/net/minecraftforge/forge/
 
