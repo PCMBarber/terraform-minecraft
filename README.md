@@ -1,7 +1,8 @@
 # terraform-minecraft
 
 Download a Forge.jar and host it on a direct download link website - (change install.sh to reflect)
-!(https://files.minecraftforge.net/net/minecraftforge/forge/)[https://files.minecraftforge.net/net/minecraftforge/forge/]
+
+https://files.minecraftforge.net/net/minecraftforge/forge/
 
 Create new Role on aws with EC2 full access, name it "minecraft"
 
