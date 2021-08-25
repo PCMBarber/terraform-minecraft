@@ -10,7 +10,8 @@ Create a new snapshot with 'MINECRAFT_SNAPSHOT' as the description, use ubuntu20
 
 On the machine you are running the terraform from create two new environment variables.
 
-TF_VAR_access_key
-TF_VAR_secret_key
+`TF_VAR_access_key`
+
+`TF_VAR_secret_key`
 
 The IAM role the access key and secret key relate to should have access to EC2 VPC and Subnets fully at least
